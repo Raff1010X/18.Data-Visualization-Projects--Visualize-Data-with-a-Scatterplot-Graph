@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+body {
+  background-color: #81d4fa;
+  display: flex;
+  justify-content: center;
+  height: 98vh;
+  overflow: hidden;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+  height: 70vh;
+  min-width: 320px;
+  min-height: 280px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 100px #fee4e7;
+  border: 1px solid gray;
+  align-self: center;
+  position: relative;
+  background: rgb(200, 222, 255);
+  background: linear-gradient(32deg, #cafafe 0%, white 100%);
+  padding: 20px;
+  font-size: 1.5rem;
+}
+#title {
+  font-size: min(20px, max(2vw, 14px));
+  font-weight: 500;
+  padding: 0.5rem 0 0.5rem 0;
+  position: absolute;
+  width: calc(100% - 40px);
+  text-align: center;
+  margin: auto;
+}
+#subtitle {
+  padding: 0.2rem;
+  font-size: min(15px, max(1.5vw, 10px));
+  font-weight: 500;
+}
+svg {
+  background-color: tranparent;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 1px solid #03a9f4;
+}
+
+#x-axis path {
+  stroke: #03a9f4;
+  stroke-width: 1;
+  fill: transparent;
+}
+#y-axis path {
+  stroke: #03a9f4;
+  stroke-width: 1;
+  fill: transparent;
+}
+
+.dot-blue {
+  fill: orange;
+}
+.dot-red {
+  fill: #03a9f4;
+}
+.dot:hover {
+  fill: white;
+  stroke: black;
+}
+
+#tooltip {
+  transition: 0.4s;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  pointer-events: none;
+  font-size: 0.66rem;
+  border-radius: 0.2rem;
+  width: 130px;
+  text-align: left;
+  padding: 0.5rem;
+  line-height: 1rem;
+  border: 1px solid black;
+}
+
+@media screen and (max-width:1000px) {
+  .chart {
+  width: 88vw;
+  height: 88vh;
+}
+}
