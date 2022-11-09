@@ -1,6 +1,6 @@
 # [freeCodeCamp Data Visualization certification](https://www.freecodecamp.org/learn/data-visualization/)
 
-## [Visualize Data with a Scatterplot Graph project]()
+## [Visualize Data with a Scatterplot Graph project](https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-scatterplot-graph)
 
 Working example: https://raff1010x.github.io/18.Data-Visualization-Projects--Visualize-Data-with-a-Scatterplot-Graph/
 
